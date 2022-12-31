@@ -9,7 +9,7 @@
     />
     <div class="max-w-4xl mx-auto sm:px-6 lg:px-8">
       <div class="mt-8 bg-white overflow-hidden  p-6">
-        <div style="width: 100vh; padding: 5px;">
+        <div class="main">
           <b-form @submit="onSubmit" @reset="onReset" v-if="show">
             <b-form-group
               v-if="!url"
@@ -154,6 +154,9 @@ export default {
 </script>
 
 <style>
+.main {
+  width: 100vh; padding: 5px;
+}
 #preview {
   display: flex;
 }
@@ -161,5 +164,11 @@ export default {
 #preview img {
   max-width: 100%;
   max-height: 250px;
+}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .main {
+    width: 50vh;
+  }
 }
 </style>
