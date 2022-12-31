@@ -168,7 +168,7 @@ export default {
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   .main {
-    width: 50vh;
+    width: 40vh;
   }
 }
 </style>
