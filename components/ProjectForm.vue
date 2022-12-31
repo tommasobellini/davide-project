@@ -75,7 +75,6 @@
                 v-model="form.work_steps"
                 placeholder="Inserisci fasi di lavoro.."
                 rows="5"
-                required
               ></b-form-textarea>
             </b-form-group>
 
@@ -85,7 +84,6 @@
                 v-model="form.materials"
                 placeholder="Inserisci materiali usati.."
                 rows="5"
-                required
               ></b-form-textarea>
             </b-form-group>
             <b-form-group id="input-group-3" label="Preventivo:" label-for="input-3">
@@ -94,7 +92,6 @@
                 v-model="form.billing"
                 placeholder="Inserisci preventivo.."
                 rows="5"
-                required
               ></b-form-textarea>
             </b-form-group>
 
